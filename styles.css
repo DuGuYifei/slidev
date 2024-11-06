@@ -34,13 +34,14 @@ button {
     cursor: pointer;
     color: white; /* 文字颜色为白色 */
 }
-.purple-buttons button { background-color: purple; }
-.green-buttons button { background-color: green; }
-.blue-buttons button { background-color: blue; }
-.yellow-buttons button { background-color: #D2B48C; }
+.purple-buttons-1 button, .purple-buttons-2 button { background-color: purple; }
+.green-buttons-1 button, .green-buttons-2 button { background-color: green; }
+.blue-buttons-1 button, .blue-buttons-2 button { background-color: blue; }
+.yellow-buttons-1 button, .yellow-buttons-2 button { background-color: #D2B48C; }
 .common-button { background-color: gray; }
 .increase-counter, .clear {
     background-color: white;
+    border: 1px solid;
     color: black;
     margin-top: 20px;
 }

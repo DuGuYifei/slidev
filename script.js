@@ -5,19 +5,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 创建颜色按钮
     colors.forEach(color => {
-        const container = document.querySelector('.' + color + '-buttons');
-        for (let i = 1; i <= 10; i++) {
-            const button = document.createElement('button');
-            button.textContent = i;
-            button.addEventListener('click', function () {
-                if (count >= i) {
-                    count -= i;
-                    counterDisplay.textContent = count;
-                    document.getElementById('black').style.width = `${parseInt(document.getElementById('black').style.width) + i}%`;
-                    document.getElementById(color).style.width = `${parseInt(document.getElementById(color).style.width) + i}%`;
-                }
-            });
-            container.appendChild(button);
+        for (let j = 1; j <= 2; j++) {
+            const container = document.querySelector('.' + color + '-buttons-' + j);
+            for (let i = 1 + 5 * (j - 1); i <= 5 * j; i++) {  // 内循环每个行容器添加五个按钮
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.addEventListener('click', function () {
+                    if (count >= i) {
+                        count -= i;
+                        counterDisplay.textContent = count;
+                        document.getElementById('black').style.width = `${parseInt(document.getElementById('black').style.width) + i}%`;
+                        document.getElementById(color).style.width = `${parseInt(document.getElementById(color).style.width) + i}%`;
+                    }
+                });
+                container.appendChild(button);
+            }
         }
     });
 
