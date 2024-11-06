@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.progress-bars {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 20px;
+}
+.progress-bar {
+    height: 20px;
+    width: 99%; /* 初始化为0 */
+    margin-bottom: 5px;
+    border: 1px solid;
+}
+
+#black { height: 20px; background-color: black; }
+#purple { height: 20px; background-color: purple; }
+#green { height: 20px; background-color: green; }
+#blue { height: 20px; background-color: blue; }
+#yellow { height: 20px; background-color: #D2B48C; }
+
+.buttons .row {
+    margin-top: 10px;
+    text-align: center;
+}
+button {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: white; /* 文字颜色为白色 */
+}
+.purple-buttons button { background-color: purple; }
+.green-buttons button { background-color: green; }
+.blue-buttons button { background-color: blue; }
+.yellow-buttons button { background-color: #D2B48C; }
+.common-button { background-color: gray; }
+.increase-counter, .clear {
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+}
+
+.counter {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir+Next:wght@200;400;600&family=Nunito+Sans:wght@200;400;600&family=Fira+Code:wght@200;400;600&display=swap" type="text/css">
-  <script type="module" crossorigin src="/slidev/assets/index-89ad4c3c.js"></script>
-  <link rel="stylesheet" href="/slidev/assets/index-0ee257da.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress Bar Game</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="app"></div>
-  
-  
+<div class="progress-bars">
+    <div class="progress-bar" style="border-color: black;">
+        <div id="black" style="width: 0%;"></div>
+    </div>
+    <div class="progress-bar" style="border-color: purple;">
+        <div id="purple" style="width: 0%;"></div>
+    </div>
+    <div class="progress-bar" style="border-color: green;">
+        <div id="green" style="width: 0%;"></div>
+    </div>
+    <div class="progress-bar" style="border-color: blue;">
+        <div id="blue" style="width: 0%;"></div>
+    </div>
+    <div class="progress-bar" style="border-color: #D2B48C;">
+        <div id="yellow" style="width: 0%;"></div>
+    </div>
+</div>
+<div class="buttons">
+    <div class="row purple-buttons"></div>
+    <div class="row green-buttons"></div>
+    <div class="row blue-buttons"></div>
+    <div class="row yellow-buttons"></div>
+    <div class="row"><button class="common-button">2</button></div>
+    <div class="row">
+        <button class="increase-counter">+1</button>
+        <button class="clear">clear</button>
+    </div>
+</div>
+<div class="counter">MP: <span id="counter">5</span></div>
+<script src="script.js"></script>
 </body>
 </html>
