@@ -39,7 +39,7 @@ button {
 .blue-buttons-1 button, .blue-buttons-2 button { background-color: blue; }
 .yellow-buttons-1 button, .yellow-buttons-2 button { background-color: #D2B48C; }
 .common-button { background-color: gray; }
-.increase-counter, .clear {
+.increase-counter, .clear, .stop {
     background-color: white;
     border: 1px solid;
     color: black;
