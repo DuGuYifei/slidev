@@ -54,4 +54,27 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         document.getElementById('black').style.width = '0%';
     });
+
+    let timerId = setInterval(() => {
+        if (count < 10) {
+            count++;
+            counterDisplay.textContent = count;
+        }
+    }, 1000);
+
+    let stopButton = document.getElementById('stop-button');
+    stopButton.addEventListener('click', function() {
+        if (stopButton.textContent == 'Start') {
+            timerId = setInterval(() => {
+                if (count < 10) {
+                    count++;
+                    counterDisplay.textContent = count;
+                }
+            }, 1000);
+            stopButton.textContent = 'Stop';
+            return;
+        }
+        clearInterval(timerId);
+        stopButton.textContent = 'Start';
+    });
 });
