@@ -15,7 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         count -= i;
                         counterDisplay.textContent = count;
                         document.getElementById('black').style.width = `${parseInt(document.getElementById('black').style.width) + i}%`;
-                        document.getElementById(color).style.width = `${parseInt(document.getElementById(color).style.width) + i}%`;
+                        let progressBar = document.getElementById(color);
+                        let newWidth = parseInt(progressBar.style.width) + i;
+                        progressBar.style.width = `${newWidth}%`;
+                        if (newWidth >= 30) {
+                            progressBar.classList.add('glow');  // 添加发光效果
+                        } else {
+                            progressBar.classList.remove('glow');  // 移除发光效果
+                        }
                     }
                 });
                 container.appendChild(button);

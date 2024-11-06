@@ -50,3 +50,7 @@ button {
     margin-top: 20px;
     text-align: center;
 }
+
+.glow {
+    box-shadow: 0 0 8px 2px rgba(197, 4, 4, 0.8); /* 添加发光效果，白色光晕 */
+}
