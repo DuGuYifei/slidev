@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         let progressBar = document.getElementById(color);
                         let newWidth = parseInt(progressBar.style.width) + i;
                         progressBar.style.width = `${newWidth}%`;
-                        if (newWidth >= 30) {
+                        if (newWidth >= 10) {
                             progressBar.classList.add('glow');  // 添加发光效果
                         } else {
                             progressBar.classList.remove('glow');  // 移除发光效果
